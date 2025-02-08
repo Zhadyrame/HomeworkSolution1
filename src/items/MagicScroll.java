@@ -3,11 +3,11 @@ import player.Player;
 
 public class MagicScroll extends Item {
     public MagicScroll() {
-        super("Магический свиток");
+        super("Scroll");
     }
 
     @Override
     public void use(Player player) {
-        System.out.println("Игрок получил магическое усиление!");
+        System.out.println("+power!");
     }
 }

@@ -19,18 +19,18 @@ public class Player {
     public void takeDamage(int damage) {
         this.health -= damage;
         if (this.health <= 0) {
-            System.out.println(name + " погиб!");
+            System.out.println(name + " game over!");
         }
     }
 
     public void addExperience(int exp) {
         this.experience += exp;
-        System.out.println(name + " получил " + exp + " опыта.");
+        System.out.println(name + " exp" + exp + " .");
     }
 
     public void pickUpItem(Item item) {
         inventory.add(item);
-        System.out.println(name + " подобрал " + item.getName());
+        System.out.println(name + " get " + item.getName());
     }
 
     public void useItem(Item item) {

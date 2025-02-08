@@ -12,7 +12,7 @@ public abstract class Enemy {
     }
 
     public void attack(Player player) {
-        System.out.println(name + " атакует игрока!");
+        System.out.println(name + " attack!");
         player.takeDamage(attackPower);
     }
 

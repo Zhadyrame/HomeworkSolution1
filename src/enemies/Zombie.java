@@ -7,7 +7,7 @@ public class Zombie extends Enemy {
 
     @Override
     public void specialAbility() {
-        System.out.println("Зомби восстанавливает часть здоровья!");
+        System.out.println("Danger!");
         this.health += 5;
     }
 }

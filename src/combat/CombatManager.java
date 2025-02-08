@@ -7,11 +7,11 @@ public class CombatManager {
         while (player.getHealth() > 0 && !enemy.isDefeated()) {
             enemy.attack(player);
             if (player.getHealth() <= 0) break;
-            System.out.println("Игрок атакует врага!");
+            System.out.println("Attack!");
             enemy.takeDamage(20);
         }
         if (enemy.isDefeated()) {
-            System.out.println("Враг повержен!");
+            System.out.println("won!");
         }
     }
 }

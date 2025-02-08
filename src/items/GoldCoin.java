@@ -5,12 +5,12 @@ public class GoldCoin extends Item {
     private int value;
 
     public GoldCoin(int value) {
-        super("Золотая монета");
+        super("Gold");
         this.value = value;
     }
 
     @Override
     public void use(Player player) {
-        System.out.println("Игрок получил " + value + " монет.");
+        System.out.println("Gold " + value + " get.");
     }
 }

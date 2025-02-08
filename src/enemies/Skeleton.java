@@ -7,6 +7,6 @@ public class Skeleton extends Enemy {
 
     @Override
     public void specialAbility() {
-        System.out.println("Скелет уклоняется от атаки!");
+        System.out.println("Oops!");
     }
 }

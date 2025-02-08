@@ -7,6 +7,6 @@ public class Vampire extends Enemy {
 
     @Override
     public void specialAbility() {
-        System.out.println("Вампир восстанавливает здоровье за счет атаки!");
+        System.out.println("Oops!");
     }
 }

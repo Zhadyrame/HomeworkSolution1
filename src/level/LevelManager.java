@@ -5,7 +5,7 @@ public class LevelManager {
 
     public void nextLevel() {
         currentLevel++;
-        System.out.println("Игрок перешел на уровень " + currentLevel);
+        System.out.println("New level!" + currentLevel);
     }
 
     public int getCurrentLevel() { return currentLevel; }
