@@ -1,4 +1,4 @@
 class Zombie extends Enemy {
-    public Zombie() { super("Zombie", 15); }
+    public Zombie() { super("Zombie",5); }
 }
 }
