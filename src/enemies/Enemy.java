@@ -1,4 +1,6 @@
-abstract class Enemy {
+package enemies;
+
+public abstract class Enemy {
     protected String name;
     protected int damage;
 
