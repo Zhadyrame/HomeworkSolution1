@@ -1,24 +1,14 @@
-package enemies;
-
-public abstract class Enemy {
+abstract class Enemy {
     protected String name;
-    protected int health;
-    protected int attackPower;
+    protected int damage;
 
-    public Enemy(String name, int health, int attackPower) {
+    public Enemy(String name, int damage) {
         this.name = name;
-        this.health = health;
-        this.attackPower = attackPower;
+        this.damage = damage;
     }
 
     public void attack(Player player) {
-        System.out.println(name + " attack!");
-        player.takeDamage(attackPower);
+        System.out.println(name + " attacks for " + damage + " damage!");
+        player.takeDamage(damage);
     }
-
-    public boolean isDefeated() {
-        return health <= 0;
-    }
-
-    public abstract void specialAbility();
 }

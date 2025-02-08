@@ -1,13 +1,8 @@
-package level;
-
-public class LevelManager {
-    private int currentLevel = 1;
+class LevelManager {
+    private int level = 1;
 
     public void nextLevel() {
-        currentLevel++;
-        System.out.println("New level!" + currentLevel);
+        level++;
+        System.out.println("Welcome to level " + level);
     }
-
-    public int getCurrentLevel() { return currentLevel; }
 }
-
