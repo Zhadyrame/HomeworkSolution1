@@ -1,8 +1,17 @@
-class HealthElixir implements Item {
+package items;
+import player.Player;
+
+public class HealthElixir extends Item {
+    private int healAmount;
+
+    public HealthElixir(int healAmount) {
+        super("Эликсир здоровья");
+        this.healAmount = healAmount;
+    }
+
     @Override
     public void use(Player player) {
-        player.heal(20);
-        System.out.println(player.getName() + " used a Health Elixir and restored 20 HP!");
+        System.out.println("Игрок восстановил " + healAmount + " HP!");
     }
 }
 
