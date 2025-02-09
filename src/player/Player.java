@@ -1,28 +1,48 @@
+package src.player;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
-class Player {
+public class Player {
     private String name;
     private int health;
-    private List<Item> inventory;
+    private int experience;
+    private List<String> inventory;
+
     public Player(String name) {
         this.name = name;
         this.health = 100;
+        this.experience = 0;
         this.inventory = new ArrayList<>();
     }
+
     public void takeDamage(int damage) {
         this.health -= damage;
-        if (this.health <= 0) {
-            System.out.println(name + " has been defeated!");
-        }
     }
-    public void addItem(Item item) {
-        inventory.add(item);
-        System.out.println(name + " picked up " + item.getName());
+
+    public void gainExperience(int exp) {
+        this.experience += exp;
     }
+
+    public void pickUpItem(String item) {
+        this.inventory.add(item);
+    }
+
     public int getHealth() {
         return health;
     }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public List<String> getInventory() {
+        return inventory;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
+
 

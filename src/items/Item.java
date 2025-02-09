@@ -1,10 +1,10 @@
-package items;
-abstract class Item {
-    protected String name;
-    public Item(String name) { this.name = name; }
-    public String getName() { return name; }
-}
+package src.items;
 
+import src.player.Player;
+
+public interface Item {
+    void use(Player player);
+}
 
 
 
