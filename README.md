@@ -46,6 +46,5 @@ java MainGame
 - **LSP (Liskov Substitution Principle)**: Subclasses can replace parent classes without altering logic.
 - **ISP (Interface Segregation Principle)**: No large interfaces; each system is isolated.
 
-## Authors
-- 👨‍💻 [Zhadyrame](https://github.com/Zhadyrame)
+
 
